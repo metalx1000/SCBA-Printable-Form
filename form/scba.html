@@ -469,7 +469,7 @@ if (typeof PDFJS === 'undefined') {
   }
 
   var digits =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0    123456789+/=';
 
   window.btoa = function windowBtoa(chars) {
     var buffer = '';
@@ -497,7 +497,7 @@ if (typeof PDFJS === 'undefined') {
 
   // https://github.com/davidchambers/Base64.js
   var digits =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0    123456789+/=';
   window.atob = function (input) {
     input = input.replace(/=+$/, '');
     if (input.length % 4 === 1) {
@@ -873,64 +873,64 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 <div class="t m0 x5 h3 y5 ff2 fs0 fc0 sc0 ls0 ws0">Date:   <span id="day">This is a test</span></div>
 <div class="t m0 x6 h4 y6 ff2 fs1 fc0 sc0 ls0 ws0">Revised 04/17/09 dev This form supersedes all other forms.</div>
 <div class="t m0 x7 h3 y7 ff2 fs0 fc0 sc0 ls0 ws0">Initial:</div>
-<div class="t m0 x8 h2 y8 ff1 fs0 fc0 sc0 ls0 ws0">Pack ID#:<span id="pack1">1234</span><span class="_ _0"></span>Pack ID#:<span id="pack2">1234</span></div>
-<div class="t m0 x8 h3 y9 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
-<div class="t m0 x9 h3 ya ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 x8 h2 y8 ff1 fs0 fc0 sc0 ls0 ws0">Pack ID#:<span id="pack1">    1234</span><span class="_ _0"></span>Pack ID#:<span id="pack2">    1234</span></div>
+<div class="t m0 x8 h3 y9 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle1">      1234</span></div>
+<div class="t m0 x9 h3 ya ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle2">    1234</span></div>
 <div class="t m0 xa h3 yb ff2 fs0 fc0 sc0 ls0 ws0">Cylinder Pressure with Lapel Gauge. </div>
-<div class="t m0 xa h3 yc ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
+<div class="t m0 xa h3 yc ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
 <div class="t m0 xa h2 yd ff1 fs0 fc0 sc0 ls0 ws0">  </div>
 <div class="t m0 xa h3 ye ff2 fs0 fc0 sc0 ls0 ws0">Other Checks </div>
-<div class="t m0 xa h3 yf ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Gauge Reads Zero </div>
-<div class="t m0 xa h3 y10 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Purge Valve Closed </div>
-<div class="t m0 xa h3 y11 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Straps Adjusted Out </div>
-<div class="t m0 xa h3 y12 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Pack Cleaned &amp; Air Dried </div>
-<div class="t m0 xa h3 y13 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Check Batteries with H.U.D </div>
-<div class="t m0 xa h3 y14 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ P.A.D. Checked</div>
+<div class="t m0 xa h3 yf ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Gauge Reads Zero </div>
+<div class="t m0 xa h3 y10 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Purge Valve Closed </div>
+<div class="t m0 xa h3 y11 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Straps Adjusted Out </div>
+<div class="t m0 xa h3 y12 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Pack Cleaned &amp; Air Dried </div>
+<div class="t m0 xa h3 y13 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Check Batteries with H.U.D </div>
+<div class="t m0 xa h3 y14 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ P.A.D. Checked</div>
 <div class="t m0 x9 h3 y15 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder Pressure with Lapel Gauge. </div>
-<div class="t m0 x9 h3 y16 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
+<div class="t m0 x9 h3 y16 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
 <div class="t m0 x9 h2 y17 ff1 fs0 fc0 sc0 ls0 ws0">  </div>
 <div class="t m0 x9 h3 y18 ff2 fs0 fc0 sc0 ls0 ws0">Other Checks </div>
-<div class="t m0 x9 h3 y19 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Gauge Reads Zero </div>
-<div class="t m0 x9 h3 y1a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Purge Valve Closed </div>
-<div class="t m0 x9 h3 y1b ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Straps Adjusted Out </div>
-<div class="t m0 x9 h3 y1c ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Pack Cleaned &amp; Air Dried </div>
-<div class="t m0 x9 h3 y1d ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Check Batteries with H.U.D </div>
-<div class="t m0 x9 h3 y1e ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ P.A.D. Checked</div>
-<div class="t m0 x8 h2 y1f ff1 fs0 fc0 sc0 ls0 ws0">Pack ID#:<span id="pack4">1234</span><span class="_ _0"> </span>Pack ID#:<span id="pack4">1234</span></div>
-<div class="t m0 x8 h3 y20 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
-<div class="t m0 x9 h3 y21 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 x9 h3 y19 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Gauge Reads Zero </div>
+<div class="t m0 x9 h3 y1a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Purge Valve Closed </div>
+<div class="t m0 x9 h3 y1b ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Straps Adjusted Out </div>
+<div class="t m0 x9 h3 y1c ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Pack Cleaned &amp; Air Dried </div>
+<div class="t m0 x9 h3 y1d ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Check Batteries with H.U.D </div>
+<div class="t m0 x9 h3 y1e ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ P.A.D. Checked</div>
+<div class="t m0 x8 h2 y1f ff1 fs0 fc0 sc0 ls0 ws0">Pack ID#:<span id="pack4">    1234</span><span class="_ _0"> </span>Pack ID#:<span id="pack4">    1234</span></div>
+<div class="t m0 x8 h3 y20 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle3">    1234</span></div>
+<div class="t m0 x9 h3 y21 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle4">    1234</span></div>
 <div class="t m0 xa h3 y22 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder Pressure with Lapel Gauge. </div>
-<div class="t m0 xa h3 y23 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
+<div class="t m0 xa h3 y23 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
 <div class="t m0 xa h2 y24 ff1 fs0 fc0 sc0 ls0 ws0">  </div>
 <div class="t m0 xa h3 y25 ff2 fs0 fc0 sc0 ls0 ws0">Other Checks </div>
-<div class="t m0 xa h3 y26 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Gauge Reads Zero </div>
-<div class="t m0 xa h3 y27 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Purge Valve Closed </div>
-<div class="t m0 xa h3 y28 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Straps Adjusted Out </div>
-<div class="t m0 xa h3 y29 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Pack Cleaned &amp; Air Dried </div>
-<div class="t m0 xa h3 y2a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Check Batteries with H.U.D </div>
-<div class="t m0 xa h3 y2b ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ P.A.D. Checked</div>
+<div class="t m0 xa h3 y26 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Gauge Reads Zero </div>
+<div class="t m0 xa h3 y27 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Purge Valve Closed </div>
+<div class="t m0 xa h3 y28 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Straps Adjusted Out </div>
+<div class="t m0 xa h3 y29 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Pack Cleaned &amp; Air Dried </div>
+<div class="t m0 xa h3 y2a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Check Batteries with H.U.D </div>
+<div class="t m0 xa h3 y2b ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ P.A.D. Checked</div>
 <div class="t m0 x9 h3 y2c ff2 fs0 fc0 sc0 ls0 ws0">Cylinder Pressure with Lapel Gauge. </div>
-<div class="t m0 x9 h3 y2d ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
+<div class="t m0 x9 h3 y2d ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span> </div>
 <div class="t m0 x9 h2 y2e ff1 fs0 fc0 sc0 ls0 ws0">  </div>
 <div class="t m0 x9 h3 y2f ff2 fs0 fc0 sc0 ls0 ws0">Other Checks </div>
-<div class="t m0 x9 h3 y30 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Gauge Reads Zero </div>
-<div class="t m0 x9 h3 y31 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Purge Valve Closed </div>
-<div class="t m0 x9 h3 y32 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Straps Adjusted Out </div>
-<div class="t m0 x9 h3 y33 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Pack Cleaned &amp; Air Dried </div>
-<div class="t m0 x9 h3 y34 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ Check Batteries with H.U.D </div>
-<div class="t m0 x9 h3 y35 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___ P.A.D. Checked</div>
-<div class="t m0 x8 h3 y36 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
-<div class="t m0 x9 h3 y37 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 x9 h3 y30 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Gauge Reads Zero </div>
+<div class="t m0 x9 h3 y31 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Purge Valve Closed </div>
+<div class="t m0 x9 h3 y32 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Straps Adjusted Out </div>
+<div class="t m0 x9 h3 y33 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Pack Cleaned &amp; Air Dried </div>
+<div class="t m0 x9 h3 y34 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ Check Batteries with H.U.D </div>
+<div class="t m0 x9 h3 y35 ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_ P.A.D. Checked</div>
+<div class="t m0 x8 h3 y36 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle5">    1234</span></div>
+<div class="t m0 x9 h3 y37 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle6">    1234</span></div>
 <div class="t m0 x7 h5 y38 ff3 fs2 fc0 sc0 ls0 ws0">Is above 4,000  psi<span class="ff4"> </span></div>
 <div class="t m0 x8 h3 y39 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder Pressure with Lapel Gauge. </div>
-<div class="t m0 x8 h3 y3a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*___  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span></div>
+<div class="t m0 x8 h3 y3a ff2 fs0 fc0 sc0 ls0 ws0"> <span class="_ _1"> </span>*_X_  Above 4,000  psi<span class="ff1">  (fill if below 4,000 psi)</span></div>
 <div class="t m0 xb h2 y3b ff1 fs0 fc0 sc0 ls0 ws0">RIC Pack</div>
 <div class="t m0 xc h2 y3c ff1 fs0 fc0 sc0 ls0 ws0">Spare Cylinders</div>
-<div class="t m0 xc h3 y3d ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 xc h3 y3d ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="rit">    1234</span></div>
 <div class="t m0 x7 h5 y3e ff3 fs2 fc0 sc0 ls0 ws0">Is above 4,000  psi<span class="ff4"> </span></div>
-<div class="t m0 xc h3 y3f ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 xc h3 y3f ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle7">    1234</span></div>
 <div class="t m0 x7 h5 y40 ff3 fs2 fc0 sc0 ls0 ws0">Is above 4,000  psi<span class="ff4"> </span></div>
-<div class="t m0 xc h3 y41 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:</div>
+<div class="t m0 xc h3 y41 ff2 fs0 fc0 sc0 ls0 ws0">Cylinder ID#:<span id="bottle8">    1234</span></div>
 <div class="t m0 x7 h5 y42 ff3 fs2 fc0 sc0 ls0 ws0">Is above 4,000  psi<span class="ff4"> </span></div>
 <div class="t m0 xd h5 y43 ff4 fs2 fc0 sc0 ls0 ws0">(fill if below 4,000 psi)</div>
 <div class="c xe y44 w2 h6">
