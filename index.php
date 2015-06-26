@@ -39,45 +39,62 @@
         $("#truck").selectmenu("refresh");
       }
 
-      $("#truck").change(function(){
-        localStorage.truck = $("#truck").val();
-      });
-
 
       //bottles
       for(var i=1;i<9;i++){ 
         $("#bottlefrm").append("<label for=\"bottle"+i+"\">Bottle "+i+":</label>");  
         $("#bottlefrm").append("<input type=\"text\" name=\"bottle\""+i+"\" id=\"bottle"+i+"\" class=\"bottle\" data-clear-btn=\"true\">");
+        $('.bottle').textinput();
       }
+      
+      //bottles load stored values
+      $(".bottle").each(function(){
+        var id = $(this).attr('id');
+        var val = sessionStorage.getItem(id);
+        $(this).val(val);
+      });
+
 
       //packs
       for(var i=1;i<5;i++){ 
         $("#packsfrm").append("<label for=\"pack"+i+"\">Pack "+i+":</label>");  
         $("#packsfrm").append("<input type=\"text\" name=\"pack\""+i+"\" id=\"pack"+i+"\" class=\"pack\" data-clear-btn=\"true\">");
+        $('.pack').textinput();
       }
     
+      //packss load stored values
+      $(".pack").each(function(){
+        var id = $(this).attr('id');
+        var val = sessionStorage.getItem(id);
+        $(this).val(val);
+        console.log(val);
+      });
+
       //print
+      $(".selector").on('click',function(event){
+        store_values();
+      });  
+
       $(".selector").on('click','#print',function(event){
         event.preventDefault();
-        log="{'fullname':" + "'" + $('#fullname').val() + "'";
-        log+=", 'day':" + "'" + $('#day').val() + "'";
-        log+=", 'truck':" + "'" + $('#truck').val() + "'";
-
-        $('.bottle').each(function(i,e){
-          var id = $(this).attr('id');
-          var val = $(this).val();
-          log += ", '"+id+"':'"+val+"'";
-        });
-
-        $('.pack').each(function(i,e){
-          var id = $(this).attr('id');
-          var val = $(this).val();
-          log += ", '"+id+"':'"+val+"'";
-        }); 
-
-        log+='}';
       });  
     });
+
+      function store_values(){
+        localStorage.truck = $("#truck").val();
+        $(".bottle").each(function(){
+          var val = $(this).val();
+          var id = $(this).attr('id');
+          sessionStorage.setItem(id,val);
+        });
+
+        $(".pack").each(function(){
+          var val = $(this).val();
+          var id = $(this).attr('id');
+          sessionStorage.setItem(id,val);
+        });
+      }
+
   </script>
 </head>
 <body>
