@@ -75,9 +75,6 @@
         store_values();
       });  
 
-      $(".selector").on('click','#print',function(event){
-        event.preventDefault();
-      });  
     });
 
       function store_values(){
